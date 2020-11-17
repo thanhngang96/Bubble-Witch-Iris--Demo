@@ -7,8 +7,9 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body>
+  <body>   
     <div id="unity-container" class="unity-desktop">
+      <pre>Invincibility is on by default, use <b>I</b> to toggle</pre>
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -26,9 +27,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGLDemo.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGLDemo.data.br",
-        frameworkUrl: buildUrl + "/WebGLDemo.framework.js.br",
-        codeUrl: buildUrl + "/WebGLDemo.wasm.br",
+        dataUrl: buildUrl + "/WebGLDemo.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGLDemo.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGLDemo.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Eggcell",
         productName: "BubbleDemo",
